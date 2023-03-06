@@ -1,6 +1,8 @@
 /* general */
 :root {
-  background-color: rgb(243, 243, 243);
+  background-image: url('./assests/images/bg.jpg');
+  position: fixed;
+  background-size: cover;
 }
 
 
@@ -9,7 +11,6 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  background-color: aquamarine;
 }
 
 .homePage img {
@@ -21,6 +22,10 @@
   transform: translateX(-50%);
   border-radius: 50%;
   display: block;
+}
+
+.homePage h1 {
+  text-align: center;
 }
 /* end of home */
 
