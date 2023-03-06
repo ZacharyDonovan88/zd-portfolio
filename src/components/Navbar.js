@@ -12,27 +12,27 @@ function Home() {
             <ul>
                 
                 <li>
-                <NavLink exact to="/pizza" activeClassName="active">
+                <NavLink exact to="/Home" activeClassName="active">
                     Home
                 </NavLink>
                 </li>
                 <li>
-                <NavLink exact to="/sides" activeClassName="active">
+                <NavLink exact to="/About" activeClassName="active">
                     About
                 </NavLink>
                 </li>
                 <li>
-                <NavLink exact to="/drinks" activeClassName="active">
+                <NavLink exact to="/Work" activeClassName="active">
                     Work
                 </NavLink>
                 </li>
                 <li>
-                <NavLink exact to="/desserts" activeClassName="active">
+                <NavLink exact to="/Contact" activeClassName="active">
                     Contact
                 </NavLink>
                 </li>
                 <li>
-                <NavLink exact to="/deals" activeClassName="active">
+                <NavLink exact to="/Resume" activeClassName="active">
                     Resume
                 </NavLink>
                 </li>
