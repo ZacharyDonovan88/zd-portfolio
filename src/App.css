@@ -1,7 +1,7 @@
 /* general */
 :root {
   background-image: url('./assests/images/bg.jpg');
-  position: fixed;
+  
   background-size: cover;
   height: 100%;
 }
@@ -40,18 +40,27 @@
   background-color: rgba(2, 42, 240, 0.912);
   display: flex;
   border-radius: 3px;
-  margin-top: 20px;
+  margin-top: 12px;
   margin-bottom: 50px;
 }
 
 .navDiv h2 {
   position: absolute;
-  padding: 20px;
+  padding: 32px;
   color: white;
+}
+
+#portTitle {
+  position: absolute;
+  right: 0;
+  width: 15%;
+  color: black;
 }
 
 nav {
   width: 100%;
+  padding: 15px;
+  padding-bottom: 50px;
 }
 
 nav ul {
@@ -66,6 +75,7 @@ nav ul {
 nav li {
   display: inline-block;
   padding: 16px;
+  margin-top: 28px;
 }
 
 nav li a {
@@ -90,6 +100,14 @@ position: sticky;
 .navbar li a.active {
 color: #fff700;
 background-color: #ff00001d;
+}
+
+.navName {
+  
+}
+
+.navPort {
+
 }
 
 @media screen and (max-width: 600px) {
@@ -135,4 +153,63 @@ background-color: #ff00001d;
 
 #footerEmail {
   float: right;
+}
+
+
+
+/* mobile */
+
+/* Mobile styles */
+@media screen and (max-width: 600px) {
+  :root {
+    background-size: contain;
+  }
+
+  .homePage img {
+    width: 50%;
+    min-width: 100px;
+  }
+
+  .navDiv {
+    height: 70px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+  }
+
+  .navDiv h2 {
+    padding: 16px;
+  }
+
+  nav {
+    height: 90px;
+    padding: 0;
+    padding-top: 16px;
+    padding-bottom: 24px;
+  }
+
+  nav li {
+    padding: 12px;
+    margin-top: 0;
+  }
+
+  .logSign {
+    margin-top: 12px;
+  }
+
+  .footer {
+    margin-top: 90px;
+    padding: 16px;
+    height: auto;
+  }
+
+  #footerPhone {
+    float: none;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  #footerEmail {
+    float: none;
+    text-align: center;
+  }
 }
