@@ -3,6 +3,7 @@
   background-image: url('./assests/images/bg.jpg');
   position: fixed;
   background-size: cover;
+  height: 100%;
 }
 
 
@@ -118,7 +119,7 @@ background-color: #ff00001d;
   margin-right: auto;
   width: 90%;
   height: 70px;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
