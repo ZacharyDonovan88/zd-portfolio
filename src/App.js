@@ -5,6 +5,7 @@ import React from 'react';
 // components
 import Home from "./components/Home.js";
 import Navbar from "./components/Navbar.js";
+import Footer from "./components/Footer.js";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route exact path="/Home" element={<Home />} />
           </Routes>
+        <Footer />
       </>
     </Router>
   );
