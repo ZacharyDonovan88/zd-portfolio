@@ -6,7 +6,8 @@ function Home() {
    return (
      <>
         <div className="homePage">
-            <h1>Zachary</h1>
+            <a><img src={require('../assests/images/Zachary.jpg')} alt=""/></a>
+                <h1>Zachary</h1>
         </div>
      </>
    );

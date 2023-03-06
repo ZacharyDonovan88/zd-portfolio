@@ -11,6 +11,17 @@
   margin-right: auto;
   background-color: aquamarine;
 }
+
+.homePage img {
+  z-index: 2;
+  width: 20%;
+  min-width: 200px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  display: block;
+}
 /* end of home */
 
 /* Navbar */
