@@ -112,10 +112,10 @@ background-color: #ff00001d;
   color: white;
 }
 
-#phone {
+#footerPhone {
   float: left;
 }
 
-#address {
+#footerEmail {
   float: right;
 }
