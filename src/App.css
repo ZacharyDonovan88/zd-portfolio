@@ -23,10 +23,17 @@
   transform: translateX(-50%);
   border-radius: 50%;
   display: block;
+  margin-top: 100px;
 }
 
 .homePage h1 {
   text-align: center;
+  font-size: 42px;
+}
+
+.homePage h2 {
+  text-align: center;
+  color: rgb(85, 85, 85);
 }
 /* end of home */
 
@@ -109,6 +116,7 @@ background-color: #ff00001d;
 .navPort {
 
 }
+
 
 @media screen and (max-width: 600px) {
   nav {

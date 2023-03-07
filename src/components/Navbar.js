@@ -2,11 +2,11 @@ import React from "react";
 import "../App.css";
 import { NavLink } from "react-router-dom";
 
-function Home() {
+function Navbar() {
  
    return (
      <>
-<div className="navDiv">
+<div className="navDiv" >
         <nav>
             <div className="navName">
                 <h2>Zachary Donovan Ceruto</h2>
@@ -49,4 +49,4 @@ function Home() {
    );
  }
  
- export default Home;
+ export default Navbar;

@@ -8,6 +8,7 @@ function Home() {
         <div className="homePage">
             <a><img src={require('../assests/images/Zachary.jpg')} alt=""/></a>
                 <h1>Zachary</h1>
+                <h2>Junior Web Developer</h2>
         </div>
      </>
    );
