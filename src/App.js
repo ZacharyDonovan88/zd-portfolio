@@ -6,6 +6,7 @@ import React from 'react';
 import Home from "./components/Home.js";
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
+import About from "./pages/About.js";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route exact path="/Home" element={<Home />} />
+            <Route exact path="/About" element={<About />} />
           </Routes>
         <Footer />
       </>
