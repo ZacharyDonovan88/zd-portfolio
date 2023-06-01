@@ -1,4 +1,17 @@
-@import '~semantic-ui-css/semantic.min.css';
-.contact {
-    
+/* @import '~semantic-ui-css/semantic.min.css'; */
+.contactMailSection .ui.input {
+  /* Styles for input components */
 }
+
+.contactMailSection .ui.form {
+  /* Styles for form components */
+}
+
+/* ... More Semantic UI styles ... */
+
+/* Additional custom styles for the contactMailSection */
+.contactMailSection .contactMailSection {
+  /* Styles specific to the contactMailSection */
+}
+
+  

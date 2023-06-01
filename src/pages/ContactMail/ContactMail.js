@@ -3,13 +3,14 @@ import '../../App.css';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react';
 import emailjs from 'emailjs-com';
 import "./ContactMail.css";
-import {Helmet} from 'react-helmet';
-import 'semantic-ui-css/semantic.min.css';
+import styles from "./Contact.module.css";
+import { Helmet } from 'react-helmet';
+// import 'semantic-ui-css/semantic.min.css';
 
-const App = () => {
+const ContactMail = () => {
   const [status, setStatus] = useState('');
   const [error, setError] = useState(false);
-  
+
   const handleOnSubmit = (e) => {
     e.preventDefault();
     const email = e.target.user_email.value;
@@ -46,21 +47,21 @@ const App = () => {
       return <div className="success">The email was sent successfully!</div>;
     } else if (status === "Failed") {
       return <div className="failure">Failed to send the email, please try again later.</div>;
+    } else {
+      return null; // Handle the default case here
     }
-  }
+  };
 
   const renderError = () => {
-    if (error) {
-      return <div className="error">Invalid email, please enter a valid email.</div>;
-    }
-  }
+    return error ? <div className="error">Invalid email, please enter a valid email.</div> : null;
+  };
 
   const SERVICE_ID = "service_s0cruze";
   const TEMPLATE_ID = "template_gqxmii8";
   const USER_ID = "XEPEOvc2cWZKV_VfM";
 
   return (
-    <div>
+    <div className="contactMailSection">
       {/* Ignore helmet section, here for testing purposes */}
       <Helmet>
       <link rel="stylesheet" href="./ContactMail/Contact.module.css" />
@@ -104,4 +105,4 @@ const App = () => {
   );
   };
 
-export default App;
+export default ContactMail;

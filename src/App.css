@@ -148,8 +148,15 @@ background-color: #ff00001d;
 
 /* end of Navbar */
 
-/* About */
+/* Contact */
+.contactText {
+  font-size: 1.3rem;
+  padding: 10px;
+}
 
+.contactSpacing {
+  margin: 10px;
+}
 
 
 /* Footer */
