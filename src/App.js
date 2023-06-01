@@ -6,8 +6,10 @@ import React from 'react';
 import Home from "./components/Home.js";
 import Navbar from "./components/Navbar.js";
 import Footer from "./components/Footer.js";
-import About from "./pages/About.js";
 
+// pages
+import About from "./pages/About.js";
+import Contact from "./pages/Contact.js";
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
             <Route exact path="/" element={<Home />} />
             <Route exact path="/Home" element={<Home />} />
             <Route exact path="/About" element={<About />} />
+            <Route exact path="/Contact" element={<Contact />} />
           </Routes>
         <Footer />
       </>
