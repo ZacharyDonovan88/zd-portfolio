@@ -5,8 +5,8 @@ function About() {
  
    return (
      <>
-        <div className="aboutStyle">
-                <h1>About</h1>
+        <div className="pageBox">
+                <h2 className="pageTitles">About</h2>
                 <p>
                     My name is Zachary Donovan Ceruto, I have just finished my full-stake 24 week course at Coding Boot Camp University of Adelaide.
                      
