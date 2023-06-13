@@ -1,9 +1,16 @@
 /* general */
 :root {
   background-image: url('./assests/images/bg.jpg');
-  
   background-size: cover;
   height: 100%;
+  
+}
+
+
+
+
+* {
+  transition-duration: 2s;
 }
 
 .pageTitles {
@@ -58,7 +65,7 @@
   margin-left: auto;
   margin-right: auto;
   height: 90px;
-  background-color: rgba(2, 42, 240, 0.912);
+  background-color: rgb(2, 42, 240);
   display: flex;
   border-radius: 3px;
   margin-top: 12px;
@@ -82,6 +89,7 @@ nav {
   width: 100%;
   padding: 15px;
   padding-bottom: 50px;
+  
 }
 
 nav ul {
@@ -105,6 +113,8 @@ nav li a {
   color: rgb(255, 255, 255);
   text-decoration: underline;
   font-size: 21px;
+  transition: all 1s ease;
+  font-weight: bold;
 }
 
 nav li a:hover {
@@ -118,13 +128,12 @@ align-items: right;
 position: sticky;
 }
 
-.navbar li a.active {
-color: #fff700;
-background-color: #ff00001d;
+.active {
+  color: #fff700;
 }
 
-.navName {
-  
+.navName h2{
+  color: #fff700;
 }
 
 .navPort {
@@ -158,6 +167,13 @@ background-color: #ff00001d;
   margin: 10px;
 }
 
+.contactMailPhone {
+  color: rgb(108, 243, 255);
+  transition: all 1s ease;
+}
+.contactMailPhone:hover {
+  color: rgb(225, 255, 0);
+}
 
 /* Footer */
 .footer {

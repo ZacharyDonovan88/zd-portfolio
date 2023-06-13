@@ -12,10 +12,10 @@ function Contact() {
             <h2 className="pageTitles">Contact</h2>
                 <div className="contactText">
                     <div className="contactSpacing">
-                        Email: <a href="mailto:Zachary.Donovan99@outlook.com">Zachary.Donovan99@outlook.com</a>
+                        Email: <a href="mailto:Zachary.Donovan99@outlook.com" className="contactMailPhone">Zachary.Donovan99@outlook.com</a>
                     </div>
                     <div className="contactSpacing">
-                        Phone:  <a href="tel:0422159001">0422 159 001</a>
+                        Phone:  <a href="tel:0422159001" className="contactMailPhone">0422 159 001</a>
                     </div>
                 </div>
                     <div>

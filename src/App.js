@@ -16,12 +16,12 @@ function App() {
     <Router>
       <>
         <Navbar />
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route exact path="/Home" element={<Home />} />
-            <Route exact path="/About" element={<About />} />
-            <Route exact path="/Contact" element={<Contact />} />
-          </Routes>
+        <Routes className="">
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/Home" element={<Home />} />
+          <Route exact path="/About" element={<About />} />
+          <Route exact path="/Contact" element={<Contact />} />
+        </Routes>
         <Footer />
       </>
     </Router>
