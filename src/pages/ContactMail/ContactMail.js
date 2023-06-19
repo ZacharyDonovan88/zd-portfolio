@@ -69,8 +69,9 @@ const ContactMail = () => {
 
       <div className='Mail'>
         <h3>{renderAlert(status)}</h3>
-        <Form onSubmit={handleOnSubmit} class="box">
+        <Form onSubmit={handleOnSubmit} className="box">
           <Form.Field
+            className="contactInput"
             id='form-input-control-email'
             control={Input}
             label='Email'
@@ -81,6 +82,7 @@ const ContactMail = () => {
             iconPosition='left'
           />
           <Form.Field
+            className="contactInput"
             id='form-input-control-last-name'
             control={Input}
             label='Name'
@@ -91,6 +93,7 @@ const ContactMail = () => {
             iconPosition='left'
           />
           <Form.Field
+            className="contactInput contactMessage"
             id='form-textarea-control-opinion'
             control={TextArea}
             label='Message'

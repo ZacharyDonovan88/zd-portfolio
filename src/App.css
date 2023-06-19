@@ -6,12 +6,11 @@
   
 }
 
-
-
-
-* {
+/*  
+ * {
   transition-duration: 2s;
-}
+}     
+*/
 
 .pageTitles {
   font-size: 2.5rem;
