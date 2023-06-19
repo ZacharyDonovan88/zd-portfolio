@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import "../App.css";
 
 function Navbar() {
   return (
@@ -11,7 +12,7 @@ function Navbar() {
         <div className="navPort">
           <h2 id="portTitle">Portfolio</h2>
         </div>
-        <ul>
+        <ul className="navList">
           <li>
             <NavLink exact to="/" activeClassName="active">
               Home
