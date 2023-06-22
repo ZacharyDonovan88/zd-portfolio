@@ -110,6 +110,8 @@
   border-radius: 3px;
   margin-top: 12px;
   margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
 }
 
 .navDiv h2 {
@@ -189,7 +191,7 @@ nav li a:hover {
     margin-top: 0px;
     margin-bottom: 20px;
     position: relative;
-    z-index: 999;
+    z-index: 90;
     width: 100%;
     display: block;
     overflow-x: hidden;
@@ -291,7 +293,49 @@ nav li a:hover {
   height: 1000px;
   margin: 10px;
   position: relative;
+  cursor: pointer;
+  transition: 1.2s;
 }
+
+.resumeImg.selected {
+  box-shadow: 0px 0px 10px 10px rgb(0, 157, 255);
+  height: 1003px;
+}
+
+.resumeImg:hover {
+  box-shadow: 0px 0px 10px 10px rgb(0, 157, 255);
+  height: 1003px;
+}
+
+.modalImage {
+  position: relative;
+}
+
+.modalArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.modalArrow.left {
+  left: 10px; /* Position the left arrow */
+}
+
+.modalArrow.right {
+  right: 10px; /* Position the right arrow */
+}
+
+.modalArrow:hover {
+  color: lightgray;
+}
+
+
 
 @media screen and (max-width: 600px) {
   .resumeImg {
@@ -299,8 +343,23 @@ nav li a:hover {
     margin-left: auto;
     margin-right: auto;
     height: 320px;
+    transition: 1s;
+  }
+  .resumeImg:hover {
+    box-shadow: 0px 0px 10px 10px rgb(0, 157, 255);
+    height: 325px;
+  }
+  .resumeImg.selected {
+    box-shadow: 0px 0px 10px 10px rgb(0, 157, 255);
+    height: 325px;
   }
 }
+
+.modalImage {
+  width: 90%;
+}
+
+
 
 /* end of Resume */
 

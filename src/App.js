@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { AnimatePresence } from 'framer-motion';
 
+
 // components
 import Home from "./components/Home.js";
 import Navbar from "./components/Navbar.js";
@@ -12,7 +13,7 @@ import Footer from "./components/Footer.js";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 import Resume from "./pages/Resume.js";
-
+import Work from "./pages/Work.js";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/" element={<Home />} />
               <Route exact path="/Home" element={<Home />} />
               <Route exact path="/About" element={<About />} />
+              <Route exact path="/Work" element={<Work />} />
               <Route exact path="/Contact" element={<Contact />} />
               <Route exact path="/Resume" element={<Resume />} />
             </Routes>

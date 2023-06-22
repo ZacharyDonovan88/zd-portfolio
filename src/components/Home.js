@@ -7,7 +7,7 @@ function Home() {
    return (
      <AnimatedPage>
         <div className="homePage">
-            <a><img src={require('../assests/images/Zachary.jpg')} alt=""/></a>
+            <a><img src={require('../assests/images/Zachary.jpg')} alt="image of Zachary"/></a>
                 <h1>Zachary</h1>
                 <h2>Junior Web Developer</h2>
         </div>
