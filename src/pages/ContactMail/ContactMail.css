@@ -5,7 +5,7 @@
 }
   
 Form {
-  border: 1px solid lightgray;
+  border: 1px solid rgb(90, 160, 252);
   border-radius: 10px;
   padding: 20px;
   background-color: rgba(190, 245, 255, 0.358);
@@ -34,6 +34,7 @@ Form {
   margin-top: 10px;
 }
 
+
 .contactInput input::placeholder {
   color: white;
 }
@@ -59,9 +60,15 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   outline: none;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid rgb(90, 160, 252);
   width: 250px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  .contactInput input{
+    width: 70%;
+  }
+  
 }
 
 .contactMessage {
