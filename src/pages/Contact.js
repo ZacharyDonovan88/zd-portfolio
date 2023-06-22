@@ -1,13 +1,15 @@
 import React from "react";
 import "../App.css";
+import AnimatedPage from "../AnimatedPage";
 
 // Contact Mail
 import ContactMail from "./ContactMail/ContactMail.js";
 
+
 function Contact() {
  
    return (
-     <>
+     <AnimatedPage>
         <div className="pageBox">
             <h2 className="pageTitles">Contact</h2>
                 <div className="contactText">
@@ -22,7 +24,7 @@ function Contact() {
                         <ContactMail />
                     </div>
         </div>
-     </>
+     </AnimatedPage>
    );
  }
  

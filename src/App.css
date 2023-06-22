@@ -7,7 +7,7 @@
 
 .container {
   flex-grow: 1;
-  padding-bottom: 100px; /* Adjust as needed to prevent overlap with footer */
+  padding-bottom: 100px; 
 }
 
 :root {
@@ -16,6 +16,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100%;
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -23,7 +24,9 @@
     background-attachment: scroll;
     background-position: 50%;
   }
+  
 }
+
 
 
 /*  
@@ -67,7 +70,13 @@
   display: block;
   margin-top: 100px;
 }
+@media screen and (max-width: 600px) {
 
+  .homePage img {
+    width: 50%;
+    min-width: 100px;
+  }
+}
 .homePage h1 {
   text-align: center;
   font-size: 42px;
@@ -180,7 +189,7 @@ nav li a:hover {
     display: block;
     margin: 30px;
     width: 100%;
-    height: 70px;
+    height: 50px;
     position: absolute;
     top: 0;
     transform: translateY(-50%);
@@ -190,7 +199,7 @@ nav li a:hover {
     display: block;
     margin: 30px;
     width: 100%;
-    height: 20px;
+    height: 10px;
     text-align: center;
     position: absolute;
     transform: translateY(-50%);
@@ -253,8 +262,13 @@ nav li a:hover {
 .contactMailPhone:hover {
   color: rgb(225, 255, 0);
 }
-
-
+@media screen and (max-width: 600px) {
+  .contactSpacing {
+    font-size: 16px;
+    padding: 10px;
+  }
+}
+/* end of contact */
 
 /* Footer */
 .footer {
@@ -262,7 +276,7 @@ nav li a:hover {
   color: white;
   padding: 20px;
   width: 90%;
-  margin-top: 100px; /* Adjust this value as needed */
+  margin-top: 100px; 
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -282,11 +296,6 @@ nav li a:hover {
   float: right;
 }
 
-
-
-/* mobile */
-
-/* Mobile styles */
 @media screen and (max-width: 600px) {
 
   .homePage img {

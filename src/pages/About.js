@@ -1,10 +1,11 @@
 import React from "react";
 import "../App.css";
+import AnimatedPage from "../AnimatedPage";
 
 function About() {
  
    return (
-     <>
+     <AnimatedPage>
         <div className="pageBox">
           <h2 className="pageTitles">About</h2>
             <p>
@@ -17,7 +18,7 @@ function About() {
               I am very passionate about coding and my goal is to be part of a successful web developing team.
             </p>
         </div>
-     </>
+     </AnimatedPage>
    );
  }
  
