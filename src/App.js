@@ -11,6 +11,7 @@ import Footer from "./components/Footer.js";
 // pages
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
+import Resume from "./pages/Resume.js";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
               <Route exact path="/Home" element={<Home />} />
               <Route exact path="/About" element={<About />} />
               <Route exact path="/Contact" element={<Contact />} />
+              <Route exact path="/Resume" element={<Resume />} />
             </Routes>
           </main>
           <Footer />

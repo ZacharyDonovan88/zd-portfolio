@@ -18,6 +18,15 @@ Form {
 .box {
   background-color: rgba(4, 159, 255, 0.088);
 }
+@media screen and (max-width: 600px) {
+  .box {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
 
 .contactInput label {
   color: white;
@@ -36,6 +45,12 @@ textarea {
   padding: 10px;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 600px) {
+  textarea {
+    width: 210px;
+  }
+  
 }
 
 .contactInput input {
