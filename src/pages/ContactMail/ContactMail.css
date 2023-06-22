@@ -41,11 +41,16 @@ Form {
 
 textarea { 
   margin-top: 10px;
-  width: 250px;
+  width: 80%;
   height: 100px;
   padding: 10px;
   border-radius: 5px;
   font-family: Arial, Helvetica, sans-serif;
+  border-color: rgb(0, 0, 0);
+}
+textarea:focus {
+  border: 2px solid rgb(90, 160, 252); 
+  outline: none;
 }
 @media screen and (max-width: 600px) {
   textarea {
@@ -60,15 +65,19 @@ textarea {
   background-color: rgba(255, 255, 255, 0);
   outline: none;
   border: none;
-  border-bottom: 2px solid rgb(90, 160, 252);
-  width: 250px;
+  border-bottom: 1px solid rgb(90, 160, 252);
+  width: 70%;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.contactInput input:focus{
+  border-bottom: 2px solid rgb(90, 160, 252);
+}
+
 @media screen and (max-width: 600px) {
   .contactInput input{
-    width: 70%;
+    width: 80%;
   }
-  
 }
 
 .contactMessage {
@@ -78,6 +87,7 @@ textarea {
 .box button {
   border: none;
   outline: none;
+  text-decoration: underline;
   background-color: rgba(255, 255, 255, 0);
   color: white;
   font-size: 18px;
@@ -87,5 +97,5 @@ textarea {
 }
 
 .box button:hover {
-  color: rgb(0, 229, 255);
+  color: rgb(60, 255, 0);
 }
