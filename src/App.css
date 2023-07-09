@@ -271,10 +271,12 @@ nav li a:hover::after {
   }
 }
 
-
-
-
 /* end of Navbar */
+
+/* About */
+.aboutPara p {
+  font-size: 2vh;
+}
 
 /* Contact */
 .contactText {
