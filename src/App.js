@@ -23,7 +23,7 @@ function App() {
           <Navbar />
           <main className="container">
             <Routes>
-              <Route exact path="/" element={<Home />} />
+              <Route exact path="/zd-portfolio" element={<Home />} />
               <Route exact path="/Home" element={<Home />} />
               <Route exact path="/About" element={<About />} />
               {/* <Route exact path="/Work" element={<Work />} /> */}
