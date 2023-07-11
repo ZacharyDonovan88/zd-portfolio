@@ -13,7 +13,7 @@ import Footer from "./components/Footer.js";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 import Resume from "./pages/Resume.js";
-import Work from "./pages/Work.js";
+// import Work from "./pages/Work.js";
 
 function App() {
   return (

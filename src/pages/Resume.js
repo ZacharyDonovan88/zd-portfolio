@@ -42,9 +42,9 @@ function Resume() {
   };
 
   const images = [
-    require("../assests/images/resumePg1.PNG"),
-    require("../assests/images/resumePg2.PNG"),
-    require("../assests/images/resumePg3.PNG"),
+    require("../assets/images/resumePg1.PNG"),
+    require("../assets/images/resumePg2.PNG"),
+    require("../assets/images/resumePg3.PNG"),
   ];
 
   const navigateToNextImage = () => {
