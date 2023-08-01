@@ -21,4 +21,4 @@ const AnimatedPage = ({children}) => {
     )
 }
 
-export default AnimatedPage
+export default AnimatedPage 

@@ -2,6 +2,8 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import { AnimatePresence } from 'framer-motion';
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
 
 
 // components
@@ -13,6 +15,7 @@ import Footer from "./components/Footer.js";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 import Resume from "./pages/Resume.js";
+import Particle from './components/Particle';
 // import Work from "./pages/Work.js";
 
 function App() {
@@ -21,6 +24,7 @@ function App() {
       <AnimatePresence>
         <div className="app">
           <Navbar />
+          <Particle />
           <main className="container">
             <Routes>
               <Route exact path="/zd-portfolio" element={<Home />} />
