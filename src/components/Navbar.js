@@ -14,7 +14,7 @@ function Navbar() {
         </div>
         <ul className="navList">
           <li>
-            <NavLink exact to="/" activeClassName="active">
+            <NavLink exact to="/Home" activeClassName="active">
               Home
             </NavLink>
           </li>
@@ -23,11 +23,11 @@ function Navbar() {
               About
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/Work" activeClassName="active">
               Work
             </NavLink>
-          </li>
+          </li> */}
           <li>
             <NavLink to="/Contact" activeClassName="active">
               Contact

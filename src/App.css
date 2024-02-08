@@ -11,12 +11,26 @@
 }
 
 :root {
-  background-image: url('./assests/images/bg.jpg');
+  background-image: url('./assets/images/bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100%;
   
+}
+
+body {
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+html,
+body {
+  position: relative;
+
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -66,11 +80,11 @@ body {
   
 }
 
-/* Progress Bar */
+/* progress */
 .progress-container {
   height: 10vh;
   width: 10vw;
-  background-color: rgba(0, 0, 0, 0.555);
+  background-color: rgba(0, 0, 0, 0.558);
   position: absolute;
   top: 50%;
   display: flex;
@@ -80,14 +94,14 @@ body {
 
 .progress-text {
   color: white;
-  font-size: 1vw; 
+  font-size: 1vw; /* Adjust the font size as needed */
   text-align: center;
 }
 @media screen and (max-width: 600px) {
   .progress-container {
     height: 10vh;
-    width: 20vw;
-    background-color: rgba(0, 0, 0, 0.555);
+    width: 15vw;
+    background-color: rgba(0, 0, 0, 0.558);
     position: absolute;
     top: 50%;
     display: flex;
@@ -97,9 +111,9 @@ body {
   
   .progress-text {
     color: white;
-    font-size: 2vw; 
+    font-size: 2vw; /* Adjust the font size as needed */
     text-align: center;
-  }
+}
 }
 
 /* Home */
@@ -421,52 +435,84 @@ nav li a:hover::after {
 /* end of Resume */
 
 /* Footer */
-.footer {
-  background-color: rgba(0, 0, 0, 0.815);
-  color: white;
-  padding: 20px;
-  width: 90%;
-  margin-top: 100px; 
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
+.footerContainer {
+  display: flex;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 3vh;
 }
 
+.footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 10vh;
+  bottom: 0;
+  left: 0;
+  position: relative;
+}
 
+.footer h4 {
+  font-size: 1vw;
+}
 
 .footer a {
   color: white;
+  padding-left: 8px;
 }
 
 #footerPhone {
+  display: flex;
+  flex-direction: row;
   float: left;
+  padding-left: 2vh;
 }
 
 #footerEmail {
   float: right;
+  flex-direction: row;
+  padding-right: 2vh;
 }
 
 @media screen and (max-width: 600px) {
-
-  .homePage img {
-    width: 50%;
-    min-width: 100px;
+  .footer-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3vh;
   }
 
   .footer {
-    margin-top: 90px;
-    padding: 16px;
-    height: auto;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    width: 100%;
+    height: 10vh;
+    bottom: 0;
+    left: 0;
+    position: relative;
+  }
+
+  .footer h4 {
+    font-size: 4vw; 
+    margin: 0;
+    padding: 1vh 0; 
+    text-align: center;
   }
 
   #footerPhone {
-    float: none;
-    text-align: center;
-    margin-bottom: 12px;
+    float: left;
+    align-items: center;
+    padding: 2vw;
   }
 
   #footerEmail {
-    float: none;
-    text-align: center;
+    float: left;
+    align-items: center;
+    padding: 2vw;
   }
 }
