@@ -33,11 +33,11 @@ function Navbar() {
               Contact
             </NavLink>
           </li>
-          <li>
+          {/* <li>
             <NavLink to="/Resume" activeClassName="active">
               Resume
             </NavLink>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </div>

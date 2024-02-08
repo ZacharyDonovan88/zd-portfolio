@@ -66,6 +66,42 @@ body {
   
 }
 
+/* Progress Bar */
+.progress-container {
+  height: 10vh;
+  width: 10vw;
+  background-color: rgba(0, 0, 0, 0.555);
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-text {
+  color: white;
+  font-size: 1vw; 
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .progress-container {
+    height: 10vh;
+    width: 20vw;
+    background-color: rgba(0, 0, 0, 0.555);
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .progress-text {
+    color: white;
+    font-size: 2vw; 
+    text-align: center;
+  }
+}
+
 /* Home */
 .homePage {
   width: 90%;

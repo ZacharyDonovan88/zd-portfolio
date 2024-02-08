@@ -13,9 +13,7 @@ function About() {
                       
             </p>
             <p>
-              I am actively searching for a junior Web Developing position. 
-              I am thrilled to expand my existing knowledge and delve deeper into the fascinating world of coding! 
-              I am very passionate about my work and my goal is to be part of a successful web developing team.
+              I am currently on the lookout for opportunities within the IT sector. The prospect of broadening my current skill set and immersing myself further into the captivating realm of IT excites me greatly. My enthusiasm for my work knows no bounds, and I am driven by the ambition to become an integral part of a thriving IT team, contributing to its success.
             </p>
         </div>
      </AnimatedPage>
