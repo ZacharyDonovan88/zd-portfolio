@@ -33,6 +33,7 @@ function Navbar() {
               </NavLink>
             </li> */}
           </ul>
+          <h4>Portfolio</h4>
         </div>
     </div>
   );
