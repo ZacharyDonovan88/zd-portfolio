@@ -11,12 +11,11 @@
 }
 
 :root {
-  background-image: url('./assets/images/bg.jpg');
+  background-image: url('./assets/images/bg-blue.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100%;
-  
 }
 
 body {
@@ -164,6 +163,7 @@ body {
 .homePage h1 {
   text-align: center;
   font-size: 42px;
+  color: white;
 }
 
 .homePage h2 {
@@ -174,8 +174,11 @@ body {
 
 /* Navbar */
 .navBar-Container {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: relative;
+  border-bottom: 0.6vmin solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	animation: 5s rotate linear infinite;
 }
 .navBar {
   display: flex;

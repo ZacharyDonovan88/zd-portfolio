@@ -8,8 +8,8 @@ function Home() {
      <AnimatedPage>
         <div className="homePage">
             <img src={require('../assets/images/Zachary.jpg')} alt="image of Zachary"/>
-                <h1>Zachary</h1>
-                <h2>Junior Web Developer</h2>
+                <h1>Zachary Donovan Ceruto</h1>
+                {/* <h2>Junior Web Developer</h2> */}
         </div>
      </AnimatedPage>
    );

@@ -38,7 +38,7 @@ function Particle() {
                   }
               },
               "color": {
-                  "value": "rgb(255, 132, 0)"
+                  "value": "rgb(66, 194, 245)"
               },
               "shape": {
                   "type": "circle",

@@ -165,3 +165,14 @@
     }
   }
   
+
+
+  :root {
+    background-image: linear-gradient(
+      to bottom, transparent, #837960
+    ), url('./assets/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100%;
+  }
