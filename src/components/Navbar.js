@@ -4,42 +4,36 @@ import "../App.css";
 
 function Navbar() {
   return (
-    <div className="navDiv">
-      <nav>
-        <div className="navName">
-          <h2>Zachary Donovan Ceruto</h2>
+    <div className="navBar-Container">
+        <div className='navBar'>
+          <ul>
+            <li>
+              <NavLink exact to="/Home" className="navLi" activeClassName="active">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/About" className="navLi" activeClassName="active">
+                About
+              </NavLink>
+            </li>
+            {/* <li>
+              <NavLink to="/Work" className="navLi" activeClassName="active">
+                Work
+              </NavLink>
+            </li> */}
+            <li>
+              <NavLink to="/Contact" className="navLi" activeClassName="active">
+                Contact
+              </NavLink>
+            </li>
+            {/* <li>
+              <NavLink to="/Resume" className="navLi" activeClassName="active">
+                Resume
+              </NavLink>
+            </li> */}
+          </ul>
         </div>
-        <div className="navPort">
-          <h2 id="portTitle">Portfolio</h2>
-        </div>
-        <ul className="navList">
-          <li>
-            <NavLink exact to="/Home" activeClassName="active">
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/About" activeClassName="active">
-              About
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink to="/Work" activeClassName="active">
-              Work
-            </NavLink>
-          </li> */}
-          <li>
-            <NavLink to="/Contact" activeClassName="active">
-              Contact
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink to="/Resume" activeClassName="active">
-              Resume
-            </NavLink>
-          </li> */}
-        </ul>
-      </nav>
     </div>
   );
 }
