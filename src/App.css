@@ -84,13 +84,33 @@ body {
 .progress-container {
   height: 10vh;
   width: 10vw;
-  background-color: rgba(0, 0, 0, 0.558);
+  background-color: rgba(0, 0, 0, 0.679);
   position: absolute;
   top: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  --angle: 0deg;
+	border-top: 0.6vmin solid;
+  border-right: 0.6vmin solid;
+  border-bottom: 0.6vmin solid;
+	border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+	
+	animation: 10s rotate linear infinite;
 }
+
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
 
 .progress-text {
   color: white;
@@ -435,84 +455,51 @@ nav li a:hover::after {
 /* end of Resume */
 
 /* Footer */
-.footerContainer {
-  display: flex;
+.footer-Container {
+  background-color: black;
   position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin-top: 3vh;
+}
+
+.footer-Container div {
+  display: flex;
+  justify-content: space-between; 
+}
+
+.footer-Container p {
+  color: white;
+  margin: 1vw;
 }
 
 .footer {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
-  height: 10vh;
-  bottom: 0;
-  left: 0;
-  position: relative;
 }
 
-.footer h4 {
-  font-size: 1vw;
+#Phone {
+  order: 1; 
 }
 
-.footer a {
+#Phone a {
+  text-decoration: none;
   color: white;
-  padding-left: 8px;
+  transition: color 1s ease
 }
 
-#footerPhone {
-  display: flex;
-  flex-direction: row;
-  float: left;
-  padding-left: 2vh;
+#Phone a:hover {
+  color:aqua;
+  transition: color 1s ease;
 }
 
-#footerEmail {
-  float: right;
-  flex-direction: row;
-  padding-right: 2vh;
+#Email {
+  order: 2; 
 }
 
-@media screen and (max-width: 600px) {
-  .footer-Container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3vh;
-  }
+#Email a {
+  text-decoration: none;
+  color: white;
+  transition: color 1s ease
+}
 
-  .footer {
-    background-color: rgb(0, 0, 0);
-    color: white;
-    width: 100%;
-    height: 10vh;
-    bottom: 0;
-    left: 0;
-    position: relative;
-  }
-
-  .footer h4 {
-    font-size: 4vw; 
-    margin: 0;
-    padding: 1vh 0; 
-    text-align: center;
-  }
-
-  #footerPhone {
-    float: left;
-    align-items: center;
-    padding: 2vw;
-  }
-
-  #footerEmail {
-    float: left;
-    align-items: center;
-    padding: 2vw;
-  }
+#Email a:hover {
+  color:aqua;
+  transition: color 1s ease;
 }
