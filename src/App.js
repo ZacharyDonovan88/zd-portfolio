@@ -17,7 +17,9 @@ import Footer from "./components/Footer.js";
 import About from "./pages/About.js";
 import Contact from "./pages/Contact.js";
 import Resume from "./pages/Resume.js";
+import MiniGame from "./pages/miniGame.js";
 import Particle from './components/Particle';
+
 // import Work from "./pages/Work.js";
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
               {/* <Route exact path="/Work" element={<Work />} /> */}
               <Route exact path="/Contact" element={<Contact />} />
               {/* <Route exact path="/Resume" element={<Resume />} /> */}
+              <Route exact path="/MiniGame" element={<MiniGame />} />
             </Routes>
           </main>
           <Footer />

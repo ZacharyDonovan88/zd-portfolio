@@ -27,6 +27,11 @@ function Navbar() {
                 Contact
               </NavLink>
             </li>
+            <li>
+              <NavLink to="/miniGame" className="navLi" activeClassName="active">
+                MiniGame
+              </NavLink>
+            </li>
             {/* <li>
               <NavLink to="/Resume" className="navLi" activeClassName="active">
                 Resume
